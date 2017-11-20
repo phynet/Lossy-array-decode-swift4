@@ -84,7 +84,7 @@ I found out here: https://bugs.swift.org/browse/SR-5953 that we can create an em
 
 ```swift
 
-    private struct DummyCodable: Codable {} <-- Dummy hack
+    private struct DummyCodable: Codable {} //<-- Dummy hack
     
     struct Groceries: Codable {
         var groceries: [GroceryProduct]
