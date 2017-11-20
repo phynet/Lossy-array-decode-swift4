@@ -31,6 +31,9 @@ But, we stop here, thinking: Should I use optionals for the properties?, this pr
 So we do something like:
 
 ```swift
+
+    private struct DummyCodable: Codable {}
+    
     struct Groceries: Codable {
         var groceries: [GroceryProduct]
         
