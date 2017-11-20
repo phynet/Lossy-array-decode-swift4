@@ -31,8 +31,6 @@ But, we stop here, thinking: Should I use optionals for the properties?, this pr
 So we do something like:
 
 ```swift
-
-    private struct DummyCodable: Codable {}
     
     struct Groceries: Codable {
         var groceries: [GroceryProduct]
@@ -86,6 +84,8 @@ I found out here: https://bugs.swift.org/browse/SR-5953 that we can create an em
 
 ```swift
 
+    private struct DummyCodable: Codable {} <-- Dummy hack
+    
     struct Groceries: Codable {
         var groceries: [GroceryProduct]
         
